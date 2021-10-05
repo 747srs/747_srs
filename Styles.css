@@ -29,8 +29,8 @@ h1 {
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    /*font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;*/
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 2.25rem;
@@ -51,19 +51,19 @@ h1 {
   .floating-button {
     text-decoration: none;
     display: inline-block;
-    width: 140px;
-    height: 45px;
+    width: 15%;
+    height: 80%px;
     line-height: 45px;
     border-radius: 45px;
     margin: 10px 10px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
     font-weight: 600;
     color: #524f4e;
-    background: white;
+    background: rgb(3, 190, 19);
     box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
     transition: .3s;
   }
@@ -73,34 +73,32 @@ h1 {
     color: white;
     transform: translateY(7px);
   }
-  .animated-button {
-    text-align: center;
+  
+  .pressed-button {
     text-decoration: none;
     display: inline-block;
-    margin: 10px 10px;
-    padding: 15px 30px;
-    overflow: hidden;
-    border: 2px solid;
-    border-bottom-width: 4px;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #77d76a 0%, #50de33 50%, #0a7800 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: rgb(0, 0, 0);
-    background: rgba(255, 255, 255, 1);
-    transition: color .3s, background .5s;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgba(0, 120, 0, 0.35);
+    transition: .5s;
   }
-  .animated-button:hover {
-    animation: stripes .75s infinite linear;
-    background: linear-gradient(45deg, rgba(30, 255, 188, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(30, 255, 188, 1) 50%, rgba(30, 255, 188, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1));
-    background-size: 10px 10px;
-    color: #FF50E5;
+  .pressed-button:hover {
+    box-shadow: 0 0 0 0 rgba(10, 120, 0, 0);
+    background-position: 0 0;
   }
-  @keyframes stripes {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 50px 0;
-    }
+
+  .scale {
+    transition: 1s;
+  }
+
+  .scale:hover {
+    transform: scale(1.2);
   }

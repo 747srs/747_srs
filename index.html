@@ -14,18 +14,7 @@
         overflow-x: hidden
 ">
     <header style="background: rgb(0, 70, 31);">
-        <div style="display: grid; grid-template-columns: 40% 60%;">
-            <a href="/" style='color: white; text-decoration: none; margin-left: 0%; margin-bottom: 0;'>
-                <img src="images/HeaderName.png"></img>
-            </a>
-            <div>
-                <a href="/747_srs/page404.html" class="floating-button">Галерея</a>
-                <a href="/747_srs/page404.html" class="floating-button">Шрек</a>
-                <a href="/747_srs/page404.html" class="floating-button">Шрек 2</a>
-                <a href="/747_srs/page404.html" class="floating-button">Шрек Третий</a>
-                <a href="/747_srs/page404.html" class="floating-button">Шрек навсегда</a>
-            </div>
-        </div>
+        @include('header')
     </header>
 
     <div style="    
@@ -37,7 +26,8 @@
         width: 700px;
         margin: 5%; 
         font-size: 150%;
-        line-height: 1.5">
+        line-height: 1.5;
+        font-family:'Сomic Sans MS', cursive;">
             <h1>Кто же такой этот ваш Шрек??</h1>
             <p>Шрек (англ. Shrek) — вымышленный огр, персонаж детской книги Уильяма Стейга «Шрек!», а также снятой
                 по её мотивам популярной серии анимационных фильмов, сопутствующих фильмам компьютерных игр,
@@ -46,10 +36,10 @@
             <p>Его тело ядовитого цвета (зеленого), уши трубочкой.</p>
             <h3>А какая одежда!</h3>
             <p>Бежевая рубашка, коричневая жилетка, коричневые штаны в клетку, ботинки.</p>
-            <a href="/747_srs/page404.html" class="animated-button">Присоединяйся к Клубу любителей Шрека!</a>
+            <a href="/747_srs/page404.html" class="pressed-button">Присоединяйся к Клубу любителей Шрека!</a>
         </div>
 
-        <div style=" margin: 10% 10%;">
+        <div class="scale" style=" margin: 10% 10%;">
             <img src="https://c.tenor.com/_j9RxpTN8UcAAAAd/dance-moves-pp-itch.gif"></img>
         </div>
         
