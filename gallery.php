@@ -7,13 +7,13 @@
     <title>Gallery</title>
 </head>
 <body>
-    <div align="center" style:"font-size: 200%">
+    <div align="center">
     <?php
-    function foo($hello){
-        echo rand() . "\n";
+        function foo($hello){
+            echo rand() . "\n";
 
-    }
-    echo foo();
+        }
+        echo foo();
 
 
 
