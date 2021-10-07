@@ -10,7 +10,7 @@
     <div align="center" style:"font-size: 200%">
     <?php
     function foo($hello){
-        echo rand() . "\n"
+        echo rand() . "\n";
 
     }
     echo foo();
