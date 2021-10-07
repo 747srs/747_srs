@@ -1,2 +1,3 @@
 <?php
-echo "<h1>Second page on php</h1>"
+echo "<h1>Second page on php</h1>";
+?>
