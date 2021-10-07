@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+    <div align="center">
     <?php
-    echo 'hello its me, Mario'
+    echo 'hello its me, Mario';
     ?>
+    </div>
 </body>
 </html>
