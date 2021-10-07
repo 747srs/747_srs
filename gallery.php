@@ -13,7 +13,7 @@
 
     <?php
         function foo(){
-            echo rand(5,15) . "\n";
+            echo rand() . "\n";
             
         }
 
